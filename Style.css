@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px, 100vw);
+    height: 95vh;
+    position: relative;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    height: 95vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .main{
+        height: 85vw;
+    }
+
+    .main .box{
+        height: 85vw;
+    }
+}
+
+nav {
+    max-width: 70vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sepration {
+    height: 5px;
+    background-color: gray;
+}
+
+.btn {
+    padding: 3px 19px;
+    background-color: rgba(23, 23, 23, 0.7);
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(238, 232, 232, 0.5);
+}
+
+.btn-sn {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn-red {
+    padding: 15px 20px;
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.main input {
+    padding: 15px 95px 15px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(238, 232, 232, 0.5);
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+}
+
+.hea1 {
+    color: white;
+    margin: 5vh 10vw;
+}
+
+.sec1 {
+    height: 50vh;
+}
+
+.imamovies {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    overflow-x: auto;
+    gap: 20px;
+    scrollbar-width: none;
+}
+
+.cards {
+    width: 11.25rem;
+    height: 15.75rem;
+    border-radius: 4px;
+}
+
+.numing {
+    color: white;
+}
+
+.sec2 {
+    color: white;
+    min-height: 60vh;
+}
+
+.sec2>h2 {
+    margin-left: 10vw;
+    margin-bottom: 30px;
+}
+
+.con {
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+}
+
+
+.cont {
+    padding: 20px;
+    width: 35vw;
+    height: 35vh;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+    .con{
+        display: block; 
+    }
+
+    .cont{
+        width: 70vw;
+        height: 20vw;
+        margin-bottom: 20px;
+    }
+
+}
+
+.cont>h3 {
+    font-size: 23px;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.cont>p {
+    font-size: 18px;
+}
+
+.sec3 {
+    color: white;
+}
+
+.sec3>h2 {
+    margin-left: 10vw;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    height: 10vh;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgb(45, 45, 45);
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+
+.card div {
+    font-size: 25px;
+    align-self: center;
+}
+
+.card> :last-child {
+    font-size: 45px;
+}
+
+.sec4 {
+    height: 30vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 70px;
+
+}
+
+.sec4>h3 {
+    color: #ffffff;
+    font-weight: 500;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+.sec4 input {
+    padding: 15px 20vw 15px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(238, 232, 232, 0.5);
+    background-color: rgba(23, 23, 23, 0.7);
+    color: white;
+}
+
+footer {
+    height: 80vh;
+    color: rgba(255, 255, 255, 0.982);
+    width: 80vw;
+    margin: auto;
+}
+
+.link {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: start;
+}
+
+@media screen and (max-width: 1200px) {
+    .link{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.link a,
+.a1 {
+    color: rgba(255, 255, 255, 0.599);
+
+}
+
+.link a:active,
+.a1:active {
+    color: red;
+}
+
+.btn2 {
+    margin-top: 40px;
+    color: white;
+}
+
+.name {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.819);
+}
+
+.last {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.573);
+    font-size: 15px;
+}
+
+.last>a {
+    color: rgb(0, 123, 255);
+}
